@@ -85,3 +85,11 @@ $comment-nick-color             = $blue-lighter
 $comment-select-category        = $grey-white
 $comment-text-color             = $blue-green
 $comment-email-text-color       = $blue-green
+
+//table
+$table-row-odd-bg-color         = #333
+$table-row-hover-bg-color       = #778899   //Light Slate Gray
+table>tbody>tr {
+  &:nth-of-type(odd) { background-color: $table-row-odd-bg-color; }
+  &:hover { background-color: $table-row-hover-bg-color; }
+}
