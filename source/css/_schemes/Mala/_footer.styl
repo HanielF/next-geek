@@ -10,7 +10,7 @@
   border-bottom none
   line-height 2
   vertical-align top
-  &::before 
+  &::before
     content ""
     position absolute
     width 100%
@@ -22,7 +22,7 @@
     transform scaleX(0)
     the-transition()
 
-  &:hover::before 
+  &:hover::before
     visibility visible
     transform scaleX(1)
 
@@ -31,3 +31,11 @@
     color $gray-lighter !important
   .fa
     font-size 16px
+
+// Footer Section
+// --------------------------------------------------
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
