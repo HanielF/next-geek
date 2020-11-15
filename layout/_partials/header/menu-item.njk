@@ -3,7 +3,8 @@
   {%- set itemURL = value.split('||')[0] | trim %}
   {%- if not itemURL.startsWith('http') %}
     {# set default links for multilanguage support #}
-    {%- if config.language[0] == page.lang %}
+    {# config.language contains 'site languages' and 'default' items. #}
+    {%- if config.language.length == 2 or config.language[0] == page.lang %}
       {%- set itemURL = itemURL | replace('//', '/') %}
     {%- else %}
       {%- set itemURL = page.lang + itemURL | replace('//', '/') %}
